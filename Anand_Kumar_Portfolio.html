@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anand Kumar — Software Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'Poppins',sans-serif; background:#0d0d0d; color:white; overflow-x:hidden; }
+
+    /* Hero Section */
+    .hero {
+      height:100vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:20px;
+    }
+    .hero h1 { font-size:3.2rem; font-weight:700; }
+    .typing { color:#00eaff; font-weight:600; }
+    .hero p { margin-top:15px; font-size:1.2rem; max-width:700px; }
+
+    /* Animated scroll button */
+    .scroll-btn {
+      margin-top:35px;
+      padding:12px 32px;
+      border-radius:30px;
+      background:#00eaff;
+      color:#000;
+      font-weight:600;
+      text-decoration:none;
+      transition:0.3s;
+    }
+    .scroll-btn:hover { opacity:0.7; }
+
+    section { padding:80px 20px; max-width:1100px; margin:auto; }
+    h2 { font-size:2rem; margin-bottom:20px; text-align:center; }
+
+    /* Cards */
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:20px; }
+
+    .card {
+      background:#161616;
+      padding:25px;
+      border-radius:12px;
+      border:1px solid #222;
+      transition:0.3s;
+    }
+    .card:hover { transform:translateY(-5px); border-color:#00eaff; }
+
+    footer {
+      text-align:center;
+      padding:30px;
+      background:#000;
+      margin-top:50px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<div class="hero">
+  <h1>Hi, I'm Anand Kumar</h1>
+  <h2 class="typing" id="typing"></h2>
+  <p>Software Developer with strong experience in Mainframe (FORTRAN & COBOL), Air Cargo enterprise systems, and Python.</p>
+  <a href="#about" class="scroll-btn">Explore</a>
+</div>
+
+<!-- About -->
+<section id="about">
+  <h2>About Me</h2>
+  <p style="text-align:center; max-width:800px; margin:auto;">
+    Passionate Software Developer with over 2.7 years of hands-on experience on Unisys mainframe USAS applications.
+    Proficient in FORTRAN and COBOL for enhancements and bug remediation. Strong troubleshooting skills and clear,
+    practical test plan creation. Effective communicator with focus on reliable, production-ready changes.
+  </p>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="card" style="max-width:850px; margin:auto; text-align:center;">
+    <strong>Pursuing Masters of Computer Applications</strong><br>
+    Manipal University, Sikkim<br><br>
+    <strong>Bachelor of Computer Applications</strong><br>
+    Nallamuthu Gounder Mahalingam College, Pollachi<br>
+    Overall - 76%
+  </div>
+</section>
+
+<section id="skills">
+  <h2 style="font-size:2.2rem; color:#00eaff;">Technical Skills</h2>
+
+  <div class="grid" style="margin-top:25px;">
+    <div class="card" style="display:flex; align-items:center; gap:12px;">⚙️ FORTRAN</div>
+    <div class="card" style="display:flex; align-items:center; gap:12px;">⚙️ COBOL</div>
+    <div class="card" style="display:flex; align-items:center; gap:12px;">⚙️ DMS</div>
+    <div class="card" style="display:flex; align-items:center; gap:12px;">🌐 HTML</div>
+    <div class="card" style="display:flex; align-items:center; gap:12px;">🎨 CSS</div>
+    <div class="card" style="display:flex; align-items:center; gap:12px;">🐍 Python</div>
+    <div class="card" style="display:flex; align-items:center; gap:12px;">🗂️ SQL</div>
+  </div>
+
+  <h2 style="margin-top:60px; font-size:2.2rem; color:#00eaff;">Tools & Software</h2>
+
+  <div class="grid" style="margin-top:25px;">
+    <div class="card" style="display:flex; align-items:center; gap:12px;">🧩 Jira</div>
+    <div class="card" style="display:flex; align-items:center; gap:12px;">🛠️ ServiceNow</div>
+    <div class="card" style="display:flex; align-items:center; gap:12px;">💻 QTerm</div>
+    <div class="card" style="display:flex; align-items:center; gap:12px;">🖥️ OS2200</div>
+    <div class="card" style="display:flex; align-items:center; gap:12px;">🌱 Git</div>
+    <div class="card" style="display:flex; align-items:center; gap:12px;">📮 Postman</div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <strong>Aircraft Movement Control Message Enhancement (MVT)</strong><br><br>
+      Implemented AC-specific MVT parsing enhancements improving custom reporting accuracy and preventing incorrect flight updates.
+    </div>
+
+    <div class="card">
+      <strong>Freight Status Update (FSU) — Global</strong><br><br>
+      Enabled Cargo Core to forward & record externally triggered FSU events across airlines improving milestone tracking.
+    </div>
+
+    <div class="card">
+      <strong>FSU — European Customs Module</strong><br><br>
+      Built customs warehouse tracking logic for outgoing FSU messages to meet EU regulatory requirements.
+    </div>
+
+    <div class="card">
+      <strong>Image-Based Authentication System</strong><br><br>
+      A secure academic project using Image Steganography with PHP, JS and SQL.
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Experience -->
+<section id="experience">
+  <h2>Professional Experience</h2>
+  <div class="card" style="max-width:850px; margin:auto;">
+    <strong>Software Engineer — Hexaware Technologies</strong><br>
+    <em>Mar 2023 – Present</em><br><br>
+    • Developed and maintained software solutions for air cargo management<br><br>
+    • Collaborated with a team of developers on the integration of new features and enhancements<br><br>
+    • Coordinated with onsite teams and offshore teams
+  </div>
+</section>
+
+<!-- Achievements -->
+<section id="achievements">
+  <h2>Achievements & Recognition</h2>
+  <div class="card" style="max-width:850px; margin:auto;">
+    • Received client appreciation for the Aircraft Movement Control Message (MVT) enhancement implemented for Air Canada.<br><br>
+    • Received client appreciation for creating comprehensive test plans that improved release quality.<br><br>
+    • Earned Manager’s recognition for delivering multiple application enhancements and providing support to Air China Cargo.<br><br>
+    • Rewarded Rockstar of the Month Award (Sep – 2025).<br><br>
+    • Received Learning Trailblazer Award (Q4 – 2024).
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <h2>Contact</h2>
+  <p style="text-align:center;">Email: <a style="color:#00eaff;" href="mailto:kanand8291@gmail.com">kanand8291@gmail.com</a></p>
+  <p style="text-align:center;">Phone: +91 9629485051</p>
+</section>
+
+<footer>
+  © 2025 Anand Kumar — Portfolio
+</footer>
+
+<!-- Typing Animation -->
+<script>
+  const roles = ["Software Developer", "Mainframe (FORTRAN & COBOL)", "Air Cargo Systems", "Python Developer"];
+  let i = 0, j = 0, current = "", isDeleting = false;
+
+  function typeEffect() {
+    current = roles[i];
+    let displayed = current.substring(0, j);
+    document.getElementById("typing").textContent = displayed;
+
+    if (!isDeleting && j < current.length) {
+      j++;
+    } else if (isDeleting && j > 0) {
+      j--;
+    } else if (j === current.length) {
+      isDeleting = true;
+      setTimeout(typeEffect, 1200); return;
+    } else if (j === 0) {
+      isDeleting = false;
+      i = (i + 1) % roles.length;
+    }
+
+    setTimeout(typeEffect, isDeleting ? 50 : 80);
+  }
+
+  typeEffect();
+</script>
+
+</body>
+</html>
